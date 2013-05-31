@@ -5,23 +5,46 @@
     class Fixture extends CI_Controller {
 
         function index() {
+            if(ENVIRONMENT != 'development')
+                return;
             $this->_user();
-            $this->_book();
+            $this->_chocolate();
         }
 
         function _user() {
             $users = array(
-                array(),
-                array(),
-                array(),
+                array(
+                    'id' => 1,
+                    'name' => 'rowend',
+                    'email' => 'rowend@rowend.com'
+                ),
+                array(
+                    'id' => 2,
+                    'name' => 'kiki',
+                    'email' => 'kiki@kiki.com'
+                ),
+                array(
+                    'id' => 3,
+                    'name' => 'wendy',
+                    'email' => 'wendy@wendy.com'
+                )
             );
         }
 
-        function _books() {
-            $books = array(
-                array(),
-                array(),
-                array(),
+        function _chocolate() {
+            $chocolates = array(
+                array(
+                    'id' => 1,
+                    'name' => 'milky way'
+                ),
+                array(
+                    'id' => 2,
+                    'name' => 'Carlos V'
+                ),
+                array(
+                    'id' => 3,
+                    'name' => 'm&m'
+                ),
             );
         }
 
