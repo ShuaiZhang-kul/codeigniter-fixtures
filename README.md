@@ -20,3 +20,10 @@ To see your fixtures working, you need go to:
   http://your-server/index.php/fixture
 
 ### Details
+
+<li>You need a database.</li>
+<li>For this example you need two tables.</li>
+<li><b>Chocolate</b> table and <b>User</b> table </li>
+<li>The user table has id, name and email fields</li>
+<li>The chocolate table has id and name</li>
+<li>You can use foreigns keys</li>
