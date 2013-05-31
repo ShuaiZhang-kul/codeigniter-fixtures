@@ -1,5 +1,10 @@
 codeigniter-fixtures
 ====================
 
-How to create fixtures in Codeigniter
-====================
+## What is it?
+
+## How does it work?
+
+## Installation
+
+## Details
