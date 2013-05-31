@@ -12,6 +12,8 @@
         }
 
         function _user() {
+            $table = 'user';
+            $this->db->truncate($table);
             $users = array(
                 array(
                     'id' => 1,
@@ -29,9 +31,12 @@
                     'email' => 'wendy@wendy.com'
                 )
             );
+            $this->db->insert_batch($table, $users);
         }
 
         function _chocolate() {
+            $table = 'chocolate';
+            $this->db->truncate($table);
             $chocolates = array(
                 array(
                     'id' => 1,
@@ -46,6 +51,7 @@
                     'name' => 'm&m'
                 ),
             );
+            $this->db->insert_batch($table, $chocolates);
         }
 
     }
